@@ -5,3 +5,20 @@
     padding: 50px 80px;
     text-align: justify;
 }
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-card {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 50px 0px;
+    padding: 50px;
+}
