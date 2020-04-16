@@ -1,7 +1,27 @@
 .about-container {
+    display: flex;
     color: #777;
     background-color: white;
     text-align: center;
     padding: 50px 80px;
     text-align: justify;
+}
+
+.on-bidet {
+    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/11B20D5B-DC79-4224-AD52-FAAE26AB4600.jpg");
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    width: 100%;
+    padding: 100px;
+}
+
+.about-title {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
