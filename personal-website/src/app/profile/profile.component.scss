@@ -1,3 +1,19 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btns {
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-btn {
+    padding: 0px 35px 0px 35px;
+    background: rgba(42,42,42,0.7);
+}
+
 .parallax {
     height: 300px;
     /* parallax scrolling effect */

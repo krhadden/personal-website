@@ -1,11 +1,19 @@
 <div class="profile-container">
-    <about></about>
+    <mat-button-toggle-group class="nav-btns">
+        <mat-button-toggle class="nav-btn" value="about" (click)="jumpTo('about')">about</mat-button-toggle>
+        <mat-button-toggle class="nav-btn" value="experience" (click)="jumpTo('experience')">experience</mat-button-toggle>
+        <mat-button-toggle class="nav-btn" value="education" (click)="jumpTo('education')">education</mat-button-toggle>
+        <mat-button-toggle class="nav-btn" value="skills" (click)="jumpTo('skills')">skills</mat-button-toggle>
+        <mat-button-toggle class="nav-btn" value="contact" (click)="jumpTo('contact')">contact</mat-button-toggle>
+    </mat-button-toggle-group>
+    <about id="about"></about>
     <div class="parallax ho-chi-minh"></div>
-    <experience></experience>
+    <experience id="experience"></experience>
     <div class="parallax rock-climbing"></div>
-    <education></education>
+    <education id="education"></education>
     <div class="parallax tide-pools"></div>
-    <skills></skills>
+    <skills id="skills"></skills>
     <div class="parallax red-rocks"></div>
-    <contact></contact>
+    <contact id="contact"></contact>
 </div>
+<ngx-spinner bdColor="rgba(255,255,255,1)" size="medium" color="#033d5b" type="ball-spin-clockwise"></ngx-spinner>

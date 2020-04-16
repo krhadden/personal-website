@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 // Components
 import { ProfileComponent } from './profile.component';
@@ -30,7 +31,8 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonToggleModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

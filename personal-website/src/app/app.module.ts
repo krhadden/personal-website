@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { ProfileModule } from './profile/profile.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 
 const routes: Routes = [
   {
@@ -25,10 +26,17 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes),
     ProfileModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxSpinnerModule
   ],
-  providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent]
+  providers: [
+    NgxSpinnerService
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
