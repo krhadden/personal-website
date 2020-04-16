@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AboutComponent } from './profile/about/about.component';
+import { ExperienceComponent } from './profile/experience/experience.component';
+import { EducationComponent } from './profile/education/education.component';
+import { SkillsComponent } from './profile/skills/skills.component';
+import { ContactComponent } from './profile/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -16,7 +21,12 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
