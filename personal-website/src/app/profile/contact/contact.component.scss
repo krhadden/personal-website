@@ -5,3 +5,47 @@
     padding: 50px 80px;
     text-align: justify;
 }
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 3px -1px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-title {
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.contact-card-title {
+    padding: 20px;
+    font-size: x-large;
+}
+
+.contact-card-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-container {
+    flex-grow: 1;
+}
+
+.biz-card {
+    padding: 20px 20px 20px 50px;
+}
+
+.phone-number, .email-addy {
+    text-align: right;
+}

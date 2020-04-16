@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { ProfileModule } from './profile/profile.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -23,7 +24,8 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    ProfileModule
+    ProfileModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
