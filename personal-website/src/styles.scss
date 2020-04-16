@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-stepper-vertical-line::before {
+    border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.mat-step-header .mat-step-icon-selected {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.mat-step-header .mat-step-icon {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.mat-step-icon-content {
+    display:none;
+}

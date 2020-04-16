@@ -1,69 +1,78 @@
 <div class="experience-container">
     <div class="section-title">EXPERIENCE</div>
-    <div class="experience-container">
-        <mat-card class="exp-card">
-            <mat-card-title>
-                Software Engineer II
-            </mat-card-title>
-            <mat-card-subtitle class="exp-subtitle">
-                BAE Systems
-                <br>
-                June 2018 - present
-            </mat-card-subtitle>
-            <mat-content>
-                <mat-card-subtitle class="sub-sub-title">
-                    Internal Research and Development
+    <mat-vertical-stepper class="corporate-ladder">
+        <ng-template matStepperIcon="edit">
+            <mat-icon>bubble_chart</mat-icon>
+        </ng-template>
+        <mat-step>
+            <mat-card class="exp-card">
+                <mat-card-title>
+                    Software Engineer II
+                </mat-card-title>
+                <mat-card-subtitle class="exp-subtitle">
+                    BAE Systems
+                    <br>
+                    June 2018 - present
                 </mat-card-subtitle>
-                - Planned, designed, and delivered new functionality for the Intelligence Community Analysts via research, engineering design meetings, and careful execution.
-                <br>
-                - Worked remotely with Hollywood graphic design contractor to create mockups using Adobe Illustrator.
-                <br>
-                - Led multiple formal demos for potential external investors and internal leadership.
-                <br>
-                - Implemented new features with JavaScript using Angular, Leaflet, Vis, D3, and PixiJS.
-                
-                <mat-card-subtitle class="sub-sub-title">
-                    Geospatial eXploitation Products
+                <mat-content>
+                    <mat-card-subtitle class="sub-sub-title">
+                        Internal Research and Development
+                    </mat-card-subtitle>
+                    - Planned, designed, and delivered new functionality for the Intelligence Community Analysts via research, engineering design meetings, and careful execution.
+                    <br>
+                    - Worked remotely with Hollywood graphic design contractor to create mockups using Adobe Illustrator.
+                    <br>
+                    - Led multiple formal demos for potential external investors and internal leadership.
+                    <br>
+                    - Implemented new features with JavaScript using Angular, Leaflet, Vis, D3, and PixiJS.
+                    
+                    <mat-card-subtitle class="sub-sub-title">
+                        Geospatial eXploitation Products
+                    </mat-card-subtitle>
+                    - Developed tools that enable comprehensive image and video analysis, data management, photogrammetry, image exploitation, precision targeting, and mission planning. 
+                    <br>
+                    - Implemented new features in collaboration with a remote team using React, YUI, and Cesium.
+                    
+                    <mat-card-subtitle class="sub-sub-title">
+                        Spartan, Space Systems
+                    </mat-card-subtitle>
+                    - Developed a Top Secret product in an Agile environment with TypeScript using Angular 8, RxJS, and Cesium.            
+                </mat-content>
+            </mat-card>
+        </mat-step>
+        <mat-step>
+            <mat-card class="exp-card">
+                <mat-card-title>
+                    Software Engineer Internship
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Dillard's Inc
+                    <br>
+                    June 2017 - August 2017
                 </mat-card-subtitle>
-                - Developed tools that enable comprehensive image and video analysis, data management, photogrammetry, image exploitation, precision targeting, and mission planning. 
-                <br>
-                - Implemented new features in collaboration with a remote team using React, YUI, and Cesium.
-                
-                <mat-card-subtitle class="sub-sub-title">
-                    Spartan, Space Systems
+                <mat-content>
+                    - Created an internal web application for employee performance reviews.
+                    <br>
+                    - Designed mockups and led iterative design meetings with managers and HR. 
+                    <br>
+                    - Served multiple roles contributing to frontend, backend, and business analyst efforts.
+                </mat-content>
+            </mat-card>
+        </mat-step>
+        <mat-step>
+            <mat-card class="exp-card">
+                <mat-card-title>
+                    Academic Tutor
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Campus Concierge
+                    <br>
+                    January 2018 - May 2018
                 </mat-card-subtitle>
-                - Developed a Top Secret product in an Agile environment with TypeScript using Angular 8, RxJS, and Cesium.            
-            </mat-content>
-        </mat-card>
-        <mat-card class="exp-card">
-            <mat-card-title>
-                Software Engineer Internship
-            </mat-card-title>
-            <mat-card-subtitle>
-                Dillard's Inc
-                <br>
-                June 2017 - August 2017
-            </mat-card-subtitle>
-            <mat-content>
-                - Created an internal web application for employee performance reviews.
-                <br>
-                - Designed mockups and led iterative design meetings with managers and HR. 
-                <br>
-                - Served multiple roles contributing to frontend, backend, and business analyst efforts.
-            </mat-content>
-        </mat-card>
-        <mat-card class="exp-card">
-            <mat-card-title>
-                Academic Tutor
-            </mat-card-title>
-            <mat-card-subtitle>
-                Campus Concierge
-                <br>
-                January 2018 - May 2018
-            </mat-card-subtitle>
-            <mat-content>
-                describing my LOVELY experience tutoring yay
-            </mat-content>
-        </mat-card>
-    </div>
+                <mat-content>
+                    Tutored Mathematics courses while a student at the University of Arkansas.
+                </mat-content>
+            </mat-card>
+        </mat-step>
+    </mat-vertical-stepper>
 </div>
