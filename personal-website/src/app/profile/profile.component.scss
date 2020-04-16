@@ -1,0 +1,16 @@
+.parallax {
+    height: 300px;
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-pic {
+    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/31600341.jpeg");
+}
+
+.rock-climbing {
+    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/B3B9FC05-41B7-4759-B8B2-F35E38B44CB8.jpg");
+}
