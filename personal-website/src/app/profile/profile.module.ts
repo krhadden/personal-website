@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatStepperModule } from '@angular/material/stepper';
+import {MatListModule} from '@angular/material/list';
 
 // Components
 import { ProfileComponent } from './profile.component';
@@ -16,6 +17,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ContactComponent } from './contact/contact.component';
     MatInputModule,
     MatFormFieldModule,
     MatButtonToggleModule,
-    MatStepperModule
+    MatStepperModule,
+    MatListModule,
+    MatDividerModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
