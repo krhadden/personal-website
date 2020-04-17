@@ -8,7 +8,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatStepperModule } from '@angular/material/stepper';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+
 
 // Components
 import { ProfileComponent } from './profile.component';
@@ -38,7 +40,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatButtonToggleModule,
     MatStepperModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

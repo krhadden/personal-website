@@ -1,24 +1,23 @@
 .about-container {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 15%;
     color: #777;
-    background-color: white;
-    text-align: center;
-    padding: 50px 80px;
-    text-align: justify;
 }
 
 .on-bidet {
     background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/11B20D5B-DC79-4224-AD52-FAAE26AB4600.jpg");
-    width: 400px;
-    height: 400px;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-size: 300px;
-    margin-bottom: 30px;
+    background-size: 40vh;
+    flex: 1 1;
 }
 
 .about-content {
-    width: 100%;
-    padding: 100px;
+    padding: 50px;
+    flex: 2 1;
 }
 
 .about-title {

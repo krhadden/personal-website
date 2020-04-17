@@ -1,26 +1,19 @@
 .contact-container {
     color: #777;
-    background-color: white;
-    text-align: center;
-    padding: 50px 80px;
     text-align: justify;
+    width: 70%;
 }
 
 .contact-card {
     display: flex;
     flex-direction: column;
+    text-align: center;
     box-shadow: 5px 5px 3px -1px rgba(0, 0, 0, 0.5);
 }
 
 .section-title {
     font-size: 30px;
     margin-bottom: 60px;
-}
-
-.contact-title {
-    padding: 20px;
-    font-size: x-large;
-    text-align: center;
 }
 
 .contact-card-title {
@@ -40,6 +33,10 @@
 
 .forms-container {
     flex-grow: 1;
+}
+
+.send-btn {
+    float: right;
 }
 
 .biz-card {

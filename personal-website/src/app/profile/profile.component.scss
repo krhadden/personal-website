@@ -16,8 +16,20 @@
     background: rgba(42,42,42,0.7);
 }
 
+#about {
+    display: flex;
+    justify-content: center;
+    min-height: 65vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0vh;
+}
+
 .parallax {
-    height: 300px;
+    height: 35vh;
     /* parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
