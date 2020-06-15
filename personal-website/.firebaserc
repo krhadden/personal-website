@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "kate-hadden"
+  },
+  "targets": {
+    "kate-hadden": {
+      "hosting": {
+        "personal-website": [
+          "kate-hadden"
+        ]
+      }
+    }
+  }
+}
