@@ -4,73 +4,21 @@
         <ng-template matStepperIcon="edit">
             <mat-icon>bubble_chart</mat-icon>
         </ng-template>
-        <mat-step>
+        <mat-step *ngFor="let experience of experiences">
             <mat-card class="exp-card">
-                <mat-card-title>
-                    Software Engineer II
+                <mat-card-title class="exp-company">
+                    {{experience.company}}
+                    <span class="experience-location" *ngIf="!!experience.jobLocation"> {{experience.jobLocation}}</span>
                 </mat-card-title>
-                <mat-card-subtitle class="exp-subtitle">
-                    BAE Systems
+                <mat-card-subtitle class="exp-role-and-duration">
+                    {{experience.title}}
                     <br>
-                    June 2018 - present
+                    {{experience.jobDates}}
                 </mat-card-subtitle>
                 <mat-content>
-                    <mat-card-subtitle class="sub-sub-title">
-                        Internal Research and Development
-                    </mat-card-subtitle>
-                    - Planned, designed, and delivered new functionality for the Intelligence Community Analysts via research, engineering design meetings, and careful execution.
-                    <br>
-                    - Worked remotely with Hollywood graphic design contractor to create mockups using Adobe Illustrator.
-                    <br>
-                    - Led multiple formal demos for potential external investors and internal leadership.
-                    <br>
-                    - Implemented new features with JavaScript using Angular, Leaflet, Vis, D3, and PixiJS.
-                    
-                    <mat-card-subtitle class="sub-sub-title">
-                        Geospatial eXploitation Products
-                    </mat-card-subtitle>
-                    - Developed tools that enable comprehensive image and video analysis, data management, photogrammetry, image exploitation, precision targeting, and mission planning. 
-                    <br>
-                    - Implemented new features in collaboration with a remote team using React, YUI, and Cesium.
-                    
-                    <mat-card-subtitle class="sub-sub-title">
-                        Spartan, Space Systems
-                    </mat-card-subtitle>
-                    - Developed a Top Secret product in an Agile environment with TypeScript using Angular 8, RxJS, and Cesium.            
-                </mat-content>
-            </mat-card>
-        </mat-step>
-        <mat-step>
-            <mat-card class="exp-card">
-                <mat-card-title>
-                    Software Engineer Internship
-                </mat-card-title>
-                <mat-card-subtitle>
-                    Dillard's Inc
-                    <br>
-                    June 2017 - August 2017
-                </mat-card-subtitle>
-                <mat-content>
-                    - Created an internal web application for employee performance reviews.
-                    <br>
-                    - Designed mockups and led iterative design meetings with managers and HR. 
-                    <br>
-                    - Served multiple roles contributing to frontend, backend, and business analyst efforts.
-                </mat-content>
-            </mat-card>
-        </mat-step>
-        <mat-step>
-            <mat-card class="exp-card">
-                <mat-card-title>
-                    Academic Tutor
-                </mat-card-title>
-                <mat-card-subtitle>
-                    Campus Concierge
-                    <br>
-                    January 2018 - May 2018
-                </mat-card-subtitle>
-                <mat-content>
-                    Tutored Mathematics courses while a student at the University of Arkansas.
+                    <ul class="exp-notes">
+                        <li *ngFor="let note of experience.notes">{{note}}</li>
+                    </ul>
                 </mat-content>
             </mat-card>
         </mat-step>

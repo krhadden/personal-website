@@ -1,74 +1,45 @@
 <div class="skills-container">
     <div class="skills-title">SKILLS</div>
     <div class="skills-cards">
+
         <mat-card class="skills-card">
-            <mat-card-title>skills</mat-card-title>
-            <mat-divider></mat-divider>
-            <mat-card-content>
-                <mat-list>
-                    <mat-list-item>JavaScript</mat-list-item>
-                    <mat-list-item>TypeScript</mat-list-item>
-                    <mat-list-item>HTML</mat-list-item>
-                    <mat-list-item>CSS/SCSS</mat-list-item>
-                    <mat-list-item>Angular</mat-list-item>
-                    <mat-list-item>React</mat-list-item>
-                    <mat-list-item>RxJS</mat-list-item>
-                </mat-list>
-            </mat-card-content>
-        </mat-card>
-        <mat-card>
             <mat-card-title>software</mat-card-title>
             <mat-divider></mat-divider>
-
             <mat-card-content>
                 <mat-list>
-                    <mat-list-item>Adobe Illustrator</mat-list-item>
-                    <mat-list-item>Adobe XD</mat-list-item>
-                    <mat-list-item>Git</mat-list-item>
-                    <mat-list-item>Jira</mat-list-item>
-                    <mat-list-item>Bitbucket</mat-list-item>
-                    <mat-list-item>Jenkins</mat-list-item>
-                    <mat-list-item>Amazon Web Services</mat-list-item>
+                    <mat-list-item *ngFor="let skill of skills">{{skill}}</mat-list-item>
                 </mat-list>
             </mat-card-content>
         </mat-card>
-        <mat-card>
+
+        <mat-card class="skills-card">
+            <mat-card-title>tools</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let tool of tools">{{tool}}</mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="skills-card">
             <mat-card-title>certifications</mat-card-title>
             <mat-divider></mat-divider>
             <mat-card-content>
                 <mat-list class="cert-list">
-                    <mat-list-item>
-                        <mat-card-content class="cert-title">
-                            Top Secret - SCI
-                        </mat-card-content>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-card-subtitle class="cert-desc">
-                            Security Clearance
-                        </mat-card-subtitle>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-card-content class="cert-title">
-                            RYT - 200 Hr - Vinyasa & Hatha
-                        </mat-card-content>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-card-subtitle class="cert-desc">
-                            Registered Yoga Teacher
-                        </mat-card-subtitle>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-card-content class="cert-title">
-                            Aerial Yoga & Fitness
-                        </mat-card-content>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-card-subtitle class="cert-desc">
-                            Registered Yoga Teacher
-                        </mat-card-subtitle>
+                    <mat-list-item *ngFor="let cert of certifications">
+                        <mat-card-content>
+                            <mat-card-title class="cert-title">
+                                {{cert.title}}
+                            </mat-card-title>
+                            <mat-card-subtitle class="cert-desc">
+                                {{cert.description}}
+                            </mat-card-subtitle>
+                        </mat-card-content> 
                     </mat-list-item>
                 </mat-list>
             </mat-card-content>
         </mat-card>
+
     </div>
 </div>

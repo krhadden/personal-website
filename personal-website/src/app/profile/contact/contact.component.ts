@@ -9,6 +9,9 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
+  public phoneNumber = "501-993-7056";
+  public email = "krhadden@gmail.com";
+
   ngOnInit(): void {
   }
 

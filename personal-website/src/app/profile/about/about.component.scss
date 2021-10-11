@@ -29,3 +29,13 @@
     font-weight: bold;
     padding-bottom: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        padding: 0 2rem;
+    }
+
+    .about-content{
+        padding: 2rem
+    }
+} 

@@ -14,7 +14,7 @@
 }
 
 .corporate-ladder {
-    background: white;;
+    background: white;
 }
 
 ::ng-deep .mat-vertical-stepper-content { 
@@ -29,6 +29,20 @@
     padding: 50px;
 }
 
+.exp-company,
+.exp-role-and-duration {
+    margin-bottom: 0;
+}
+
+.experience-location {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.exp-role-and-duration {
+    line-height: 16px;
+}
+
 .exp-subtitle {
     margin-bottom: 0px;
 }
@@ -36,3 +50,28 @@
 .sub-sub-title {
     margin: 15px 0px 0px 0px !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .experience-container {
+        padding: 0 2rem;
+    }
+
+    .about-content{
+        padding: 2rem
+    }
+
+    ::ng-deep .mat-step-header{
+        padding: .5rem !important;
+    }
+
+    ::ng-deep .mat-vertical-content-container {
+        margin-left: 20px !important;
+    }
+
+    ::ng-deep .mat-stepper-vertical-line::before{
+        top: -4px !important;
+        bottom: -4px !important;
+    }
+
+    
+} 
