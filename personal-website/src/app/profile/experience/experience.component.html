@@ -8,7 +8,7 @@
             <mat-card class="exp-card">
                 <mat-card-title class="exp-company">
                     {{experience.company}}
-                    <span class="experience-location" *ngIf="!!experience.jobLocation"> {{experience.jobLocation}}</span>
+                    <div class="experience-location" *ngIf="!!experience.jobLocation"> {{experience.jobLocation}}</div>
                 </mat-card-title>
                 <mat-card-subtitle class="exp-role-and-duration">
                     {{experience.title}}

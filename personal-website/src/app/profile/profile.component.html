@@ -1,19 +1,41 @@
 <div class="profile-container">
-    <mat-button-toggle-group class="nav-btns">
+    <mat-button-toggle-group class="nav-btns desktop-menu">
         <mat-button-toggle class="nav-btn" value="about" (click)="jumpTo('about')">about</mat-button-toggle>
         <mat-button-toggle class="nav-btn" value="experience" (click)="jumpTo('experience')">experience</mat-button-toggle>
         <mat-button-toggle class="nav-btn" value="education" (click)="jumpTo('education')">education</mat-button-toggle>
         <mat-button-toggle class="nav-btn" value="skills" (click)="jumpTo('skills')">skills</mat-button-toggle>
         <mat-button-toggle class="nav-btn" value="contact" (click)="jumpTo('contact')">contact</mat-button-toggle>
     </mat-button-toggle-group>
+    <div class="mobile-menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu" id="dots">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="jumpTo('about')">
+                <span>about</span>
+            </button>
+            <button mat-menu-item (click)="jumpTo('experience')">
+                <span>experience</span>
+            </button>
+            <button mat-menu-item (click)="jumpTo('education')">
+                <span>education</span>
+            </button>
+            <button mat-menu-item (click)="jumpTo('skills')">
+                <span>skills</span>
+            </button>
+            <button mat-menu-item (click)="jumpTo('contact')">
+                <span>contact</span>
+            </button>
+        </mat-menu>
+    </div>
     <about id="about"></about>
-    <div class="parallax ho-chi-minh"></div>
+    <div class="parallax sd-flowers"></div>
     <experience id="experience" class="content"></experience>
     <div class="parallax rock-climbing"></div>
     <education id="education" class="content"></education>
-    <div class="parallax tide-pools"></div>
+    <div class="parallax sd-sunset"></div>
     <skills id="skills" class="content"></skills>
-    <div class="parallax red-rocks"></div>
+    <div class="parallax el-cajon-mtn"></div>
     <contact id="contact" class="content"></contact>
 </div>
 <ngx-spinner bdColor="rgba(255,255,255,1)" size="medium" color="#033d5b" type="ball-spin-clockwise"></ngx-spinner>

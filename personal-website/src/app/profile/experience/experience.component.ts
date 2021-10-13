@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 class Experience {
   constructor (props) {
     return Object.assign(this, props);
@@ -80,10 +78,10 @@ export class ExperienceComponent implements OnInit {
       title: 'Software Engineer Internship',
       company: 'Dillards Technology',
       startDate: 'June 2017',
-      endDate: 'August 2027',
+      endDate: 'August 2017',
       location: {
-        city: 'San Diego',
-        state: 'CA'
+        city: 'Little Rock',
+        state: 'AR'
       },
       notes: [
         'Created a web application for employee performance reviews with AngularJS, Groovy on Grails, and SQL.',

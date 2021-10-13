@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'profile',
@@ -24,6 +25,7 @@ export class ProfileComponent implements OnInit {
   jumpTo(id: string): void {
     const element = document.getElementById(id);
     if (element) {
+      console.log("hi", element);
       element.scrollIntoView({behavior: 'smooth'});
     }
   }

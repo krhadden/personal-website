@@ -11,9 +11,37 @@
     border: none;
 }
 
+.button-group-somthing {
+    max-width: 715px;
+    width: 100%;
+    margin: auto;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
 .nav-btn {
     padding: 0px 35px 0px 35px;
     background: rgba(42,42,42,0.7);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#dots:hover {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 715px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+    }
 }
 
 #about {
@@ -38,29 +66,41 @@
 }
 
 .profile-pic {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/31600341.jpeg");
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/11B20D5B-DC79-4224-AD52-FAAE26AB4600.jpg");
 }
 
 .rock-climbing {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/B3B9FC05-41B7-4759-B8B2-F35E38B44CB8.jpg");
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/malibu-climbing.jpg");
 }
 
-.bangkok-mall {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/83A257A3-D2E6-4E56-AF5D-BE0EB6BB73AC.jpeg");
+.sd-flowers {
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/sd-flowers.jpg");
 }
 
-.boulder-in-boulder {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/IMG_9839.jpg");
+.jtree-rocks {
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/jtree-rocks.heic");
 }
 
 .tide-pools {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/9AE4849E-DB00-4725-BD91-7092205266F1.jpg");
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/tide-pools.JPG");
 }
 
 .ho-chi-minh {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/IMG_1521.jpg");
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/mission-gorge-climbing.JPG");
 }
 
 .red-rocks {
     background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/IMG_0541.jpg");
+}
+
+.sd-jap-garden {
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/sd-jap-garden.heic");
+}
+
+.sd-sunset {
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/sd-sunset.jpg");
+}
+
+.el-cajon-mtn {
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/el-cajon-mtn.jpg");
 }

@@ -8,11 +8,12 @@
 }
 
 .on-bidet {
-    background-image: url("https://hadden-personal.s3-us-west-1.amazonaws.com/11B20D5B-DC79-4224-AD52-FAAE26AB4600.jpg");
+    background-image: url("https://krhphotos.s3.us-west-1.amazonaws.com/on-bidet.jpg");
     height: 50vh;
     background-repeat: no-repeat;
     background-size: 40vh;
     flex: 1 1;
+    min-width: 240px;
 }
 
 .about-content {
@@ -30,9 +31,10 @@
     padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 715px) {
     .about-container {
-        padding: 0 2rem;
+        display: block;
+        margin-top: 40px;
     }
 
     .about-content{

@@ -10,6 +10,9 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 
 // Components
@@ -19,7 +22,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
-import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,7 @@ import { MatDividerModule } from '@angular/material/divider';
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatStepperModule,
     MatListModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
