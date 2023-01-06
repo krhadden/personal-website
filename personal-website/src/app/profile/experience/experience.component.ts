@@ -39,9 +39,25 @@ export class ExperienceComponent implements OnInit {
   public experiences: Experience[] = [
     new Experience({
       title: 'Software Engineer',
+      company: 'Swoop',
+      startDate: 'January 2022',
+      endDate: 'Present',
+      location: {
+        city: 'San Diego (Remote)',
+        state: 'CA'
+      },
+      notes: [
+        'Created messaging application for internal and external use',
+        'Built and led mesh configuration features including an interactive dashboard and controls for searching and manipulating secure sessions between devices',
+        'Designed and led other engineers in the implementation of role based access control throughout the entire application using a new data model of access levels and permissions',
+        'Led CryptoAgility team to create an encryption profiling feature',
+      ]
+    }),
+    new Experience({
+      title: 'Software Engineer',
       company: 'Microsoft',
       startDate: 'August 2020',
-      endDate: 'Present',
+      endDate: 'December 2021',
       location: {
         city: 'Seattle',
         state: 'WA'

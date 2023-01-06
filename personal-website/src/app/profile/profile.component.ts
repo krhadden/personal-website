@@ -25,7 +25,6 @@ export class ProfileComponent implements OnInit {
   jumpTo(id: string): void {
     const element = document.getElementById(id);
     if (element) {
-      console.log("hi", element);
       element.scrollIntoView({behavior: 'smooth'});
     }
   }

@@ -21,15 +21,13 @@ export class SkillsComponent implements OnInit {
     "CSS/SCSS",
     "Angular",
     "React",
-    "RxJS"
   ];
 
   public tools: string[] = [
     "Adobe Illustrator",
-    "Adobe XD",
+    "Figma",
     "Git",
     "Jira",
-    "Bitbucket",
     "Jenkins",
     "Amazon Web Services"
   ];
